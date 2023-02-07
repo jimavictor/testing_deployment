@@ -11,4 +11,5 @@ class HelloWorld(Resource):
 api.add_resource(HelloWorld, '/')
 
 if __name__ == '__main__':
-    app.run(debug=False)
+    from waitress import serve
+    serve(app, host="0.0.0.0", port=PORT)
