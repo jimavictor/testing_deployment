@@ -12,4 +12,4 @@ api.add_resource(HelloWorld, '/')
 
 if __name__ == '__main__':
     from waitress import serve
-    serve(app, host="0.0.0.0:$PORT", debug=False)
+    serve(app, host="0.0.0.0")
